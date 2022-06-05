@@ -27,7 +27,7 @@ Feature comparison between Monero desktop wallets.
 |[Reproducible builds](building-from-source)  |✔<sup>[3]</sup>|✔|✔<sup>[3]</sup>|
 |Hide balance                                 |✔|✖|✔|
 |Output blackballing                          |✖|✔|✔|
-|Lock on inactivity                           |✖*|✔|✔|
+|Lock on inactivity                           |✔|✔|✔|
 |**► Proofs / Messages**|
 |[Sign/verify message](sign-verify-message)   |✔|✔|✔|
 |[Verify transaction proof](verify-tx-proof)  |✔|✔|✔|
