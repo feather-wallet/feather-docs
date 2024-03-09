@@ -62,6 +62,7 @@ Feature comparison between Monero desktop wallets.
 | Solo mining                                                                                 | ✔<sup>[6]</sup>          | ✔               | ✔               |
 | [Pool mining](mining-setup)                                                                 | ✔<sup>[6]</sup>          | ✖               | ✖               |
 | P2Pool                                                                                      | ✖*                       | ✖               | ✔               |
+| Mine for RPC                                                                                | ✖                        | ✔               | ✖               |
 | **► Hardware wallets**                                                                      |
 | Ledger Nano S/S+/X                                                                          | ✔                        | ✔               | ✔               |
 | Trezor Model T/Safe 3                                                                       | ✔                        | ✔               | ✔               |
