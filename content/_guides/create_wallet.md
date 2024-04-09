@@ -25,7 +25,7 @@ In the **Name** field, type a name for your wallet. You may name the wallet what
 
 The **Directory** field shows the default location for the wallet files. We recommend leaving it as the default. If you want to store all files relative to the executable, follow the steps [here](portable-mode) to enable portable mode.
 
-On the next page, choose a password to encrypt your wallet files with. It is recommended to use a strong password generated with a password manager, such as KeePassXC.
+On the next page, choose a password to encrypt your wallet files with. It is recommended to use a strong password generated with a password manager, such as [KeePassXC](https://keepassxc.org/).
 
 Click on **Create/Open wallet** to finish wallet creation.
 
