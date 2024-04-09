@@ -30,18 +30,17 @@ The following data is provided by the websocket server:
 
 |key                        | description                                                                                                                                     |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|blockheights               | Current mainnet and stagenet blockheights. Used to speed up initial synchronization of newly created wallets.                                   |
-|nodes                      | A curated list of high-performance nodes run by trusted members of the community. Includes status information such as their current blockheight. |
+|blockheights               | Current Mainnet and Stagenet blockheights. Used to speed up initial synchronization of newly created wallets.                                   |
+|nodes                      | A curated list of high-performance nodes run by trusted members of the community. Includes status information such as their current blockheight.|
 |crypto_rates               | Crypto exchange rates. Obtained from CoinGecko.                                                                                                 |
-|fiat_rates                 | Fiat exchange rates                                                                                                                             |
-|reddit                     | Latest Reddit posts in /r/Monero. Displayed on the Home screen.                                                                                 |
-|ccs                        | Crowdfunding proposals from the Community Crowdfunding System and MAGIC Monero Fund. Displayed on the Home screen.          |
-|txFiatHistory              | Historical fiat prices                                                                                                                          |
-|updates                    | Latest Feather version                                                                                                                          |
-|𝐗𝐌𝐑𝐢𝐠                      | Latest 𝐗𝐌𝐑𝐢𝐠 downloads                                                                                                                          |
-|localmonero_countries      | List of countries supported by LocalMonero                                                                                                      |
-|localmonero_currencies     | List of currencies supported by LocalMonero                                                                                                     |
-|localmonero_payment_methods| List of payment methods supported by LocalMonero                                                                                                |
+|fiat_rates                 | Fiat exchange rates. Obtained from CurrencyScoop and APILayer (fallback).                                                                       |
+|ccs                        | Crowdfunding proposals from the Community Crowdfunding System and MAGIC Monero Fund. Displayed on the Home screen.                              |
+|txFiatHistory              | Historical fiat prices. Obtained from CoinCap.                                                                                                  |
+|updates                    | Latest FeatherWallet version.                                                                                                                   |
+|𝐗𝐌𝐑𝐢𝐠                      | Latest 𝐗𝐌𝐑𝐢𝐠 downloads.                                                                                                                        |
+|localmonero_countries      | List of countries supported by LocalMonero.                                                                                                     |
+|localmonero_currencies     | List of currencies supported by LocalMonero.                                                                                                    |
+|localmonero_payment_methods| List of payment methods supported by LocalMonero.                                                                                               |
 
 ### Disabling the websocket connection
 
