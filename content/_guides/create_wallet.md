@@ -17,7 +17,7 @@ On the wizard, select **Create new wallet**.
 
 On the next page, the wallet seed is shown. You may notice that the seed is shorter than other standard 25 word Monero seed. Feather uses Polyseed for 16 word seeds. To learn more about Polyseed and the benefits compared to 25 word seeds, see the information [here](seed-scheme).
 
-The seed allows you to recover your funds in case you lose access to your wallet files. DO NOT LOSE IT.
+The seed allows you to recover your funds in case you lose access to your wallet files. DO NOT LOSE IT. Do not screenshot, store in password manager or send it anywhere online. The safest option is to write it down on a piece of paper, or better yet store them using Shamir Secret Sharing. If you have a hardware device, you can follow [this guide](create-wallet-hardware-device) to store your seed there.
 
 Click **next** after you have verified that **you have written down all words in the correct order**.
 
