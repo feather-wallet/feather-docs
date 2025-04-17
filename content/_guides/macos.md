@@ -24,12 +24,6 @@ The estimated storage requirement is ~70 MB.
 - Go to Applications
 - Right click on Feather -> Open
 
-You may be greeted with the following screen:
-
-![Feather will not open](/static/files/macos_open_app.png)
-
-Click cancel, and try opening Feather again. This time you should have an option to open Feather.
-
 
 ### Verifying the download
 

@@ -17,7 +17,7 @@ Transactions are constructed using the view-only wallet on the online device, th
 Feather supports two airgapped transaction signing methods:
 
 - Using a webcam to scan **animated QR code** (Uniform Resources, or **UR** for short)
-- By transfering **files** between computers (using a flash drive or SD card) 
+- By transferring **files** between computers (using a flash drive or SD card)
 
 For this guide we assume you will be using animated QR codes.
 

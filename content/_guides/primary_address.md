@@ -16,7 +16,7 @@ You may need your primary address when you are:
 - [Creating a view-only wallet](create-view-only-wallet)
 - Transacting with a service that does not accept subaddresses
 
-If you are transaction with a service that does not accept addresses starting with an '8', please ask them to add support for subaddresses. This requires very little effort on their part.
+If you are transacting with a service that does not accept addresses starting with an '8', please ask them to add support for subaddresses. This requires very little effort on their part.
 
 ### Why is the primary address hidden by default from the Receive tab?
 

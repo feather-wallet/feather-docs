@@ -4,7 +4,7 @@ nav_title: Setup mining
 category: howto
 ---
 
-Go to the **Mining** tab. (If not shown, go to **View → Show Mining**).
+Go to the **Mining** tab. (If not shown, go to **View → Mining**).
 
 ### Downloading 𝐗𝐌𝐑𝐢𝐠
 

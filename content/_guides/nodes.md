@@ -12,7 +12,7 @@ A **local node** is a node that runs on your own computer or a private network. 
 
 A **remote node** is a node that is accessible on a public network. Typically, a third party runs a remote node. Remote nodes are referred to as public nodes in some contexts.
 
-By default, Feather connects to a random node from a curated list of high performance remote nodes run by trusted members of the Monero community. When Feather is started for the first time, you have the option to configure how to wallet will connect to a node **before** any connections are made.
+By default, Feather connects to a random node from a curated list of high performance remote nodes run by trusted members of the Monero community. When Feather is started for the first time, you have the option to configure how the wallet will connect to a node **before** any connections are made.
 
 You can change how Feather connect by going to **Settings → Network → Nodes**.
 
@@ -53,7 +53,7 @@ During normal use the wallet will use the following endpoints:
 |/get_transaction_pool_hashes.bin| Sync | Get tx hashes from transaction pool. Called every 10 seconds after main sync is finished. |
 |/get_transactions| Sync | Get pool transactions the wallet hasn't scanned before. |
 |/get_output_distribution| Tx Construction | Output distribution used in decoy selection. Data is hashed and checked against a hardcoded value to mitigate against output distribution poisoning.<br>In Feather, the distribution is requested and cached immediately upon finishing wallet synchronization to cut bandwidth requirements for transaction construction by an order of magnitude. |
-|/get_outs.bin| Tx Construction | Request output public keys for selected indeces of ring members. The wallet cannot verify the validity of the public keys, except for the true input. Feather will show a warning if the true input is missing from the reponse. |
+|/get_outs.bin| Tx Construction | Request output public keys for selected indeces of ring members. The wallet cannot verify the validity of the public keys, except for the true input. Feather will show a warning if the true input is missing from the response. |
 |get_fee_estimate| Tx Construction | Get base transaction fee. Malicious nodes can introduce a fungibility defect by providing an incorrect fee estimate. |
 |hard_fork_info | Tx Construction | Get information about hard fork state. |
 |/send_raw_transaction | Tx Broadcast | Instruct the node to broadcast the transcation to the network. |

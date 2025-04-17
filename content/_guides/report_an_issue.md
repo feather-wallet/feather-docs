@@ -8,7 +8,6 @@ Issues or support queries can be reported via any of the following channels:
 
 - Matrix: [matrix.to/#/#feather:monero.social](https://matrix.to/#/#feather:monero.social)
 - IRC: `#feather` on [OFTC](https://www.oftc.net/)
-- Lemmy: [monero.town/c/FeatherWallet](https://monero.town/c/FeatherWallet)
 - Email: [dev@featherwallet.org](mailto:dev@featherwallet.org)
 - GitHub: [github.com/feather-wallet/feather](https://github.com/feather-wallet/feather)
 

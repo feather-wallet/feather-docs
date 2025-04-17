@@ -4,7 +4,7 @@ nav_title: Sweep outputs
 category: howto
 ---
 
-Make sure the **Coins** tab is enabled: **View → Show Coins**.
+Make sure the **Coins** tab is enabled: **View → Coins**.
 
 On the **Coins** tab, select one or more outputs to sweep. To select multiple outputs hold the Ctrl-key.
 

@@ -10,7 +10,7 @@ Use this guide if you suspect your balance may be incorrect.
 
 ### Do you have any Frozen coins?
 
-Go to the **Coins** tab (**View → Show coins**). Frozen coins show a blue background color. Frozen coins do not count towards your total balance. [Thaw](freeze-thaw-output) the coins to make them available for spending.
+Go to the **Coins** tab (**View → Coins**). Frozen coins show a blue background color. Frozen coins do not count towards your total balance. [Thaw](freeze-thaw-output) the coins to make them available for spending.
 
 ### Rescan spent
 

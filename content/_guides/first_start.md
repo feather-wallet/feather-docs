@@ -33,11 +33,11 @@ We recommend using this option for **most** users.
 
 If you do not want to connect to one the built-in nodes, select **Select node manually**.
 
-Enter the address and port in the textbox. For example: `node.community.rino.io:18081`.
+Enter the address and port in the textbox. For example: `node.monerodevs.org:18089`.
 
 ### Connecting to a local node
 
-Feather automatically detects the presense of a [local node](local-node) on the default port.
+Feather automatically detects the presence of a [local node](local-node) on the default port.
 
 Feather does not manage a local node for you. 
 If you want to run a local node, follow the steps in [this guide](https://moneroguides.org/tutorials/01x02-setting-up-your-own-node/) to set one up.

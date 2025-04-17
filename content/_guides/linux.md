@@ -94,23 +94,3 @@ After the download is complete, **make sure to allow executing the file as a pro
 You should now be able to run the AppImage by double-clicking on the file in a file explorer. If that does not work, try right-clicking on the file, and look for "Run" or "Open". Alternatively, you can start Feather by typing `./feather-x.x.x.AppImage` in a terminal.
 
 Having trouble getting Feather to start? Please [contact](report-an-issue) the developers.
-
----
-
-## Arch Linux
-
-Feather is available on the [AUR](https://aur.archlinux.org/packages/monero-feather-git).
-
-### Installation with yay
-
-```bash
-yay -S monero-feather-git
-```
-
-### Manually
-
-```bash
-git clone https://aur.archlinux.org/monero-feather-git.git
-cd monero-feather-git
-makepkg -si
-```

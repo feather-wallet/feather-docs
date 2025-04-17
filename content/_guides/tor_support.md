@@ -13,7 +13,7 @@ If you are unable to connect to the Tor network on your machine, you may configu
 Feather can be configured to handle traffic to nodes in three different ways:
 
 - Never over Tor
-- Switch to Tor after intial synchronization (**default**)
+- Switch to Tor after initial synchronization (**default**)
 - Always over Tor
 
 You have the option to select the desired mode when Feather is started for the first time **before** any network connections are made. You can also change the mode in the **Settings → Network → Proxy** tab.

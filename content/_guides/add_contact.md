@@ -4,7 +4,9 @@ nav_title: Add a contact
 category: howto
 ---
 
-Go to the **Send** tab. Right click inside the contacts table **→ New contact**.
+Make sure the **Contacts** tab is enabled: **View → Contacts**.
+
+Go to the **Contacts** tab. Right click inside the contacts table **→ New contact**.
 
 Enter the address and name and click **Ok**.
 

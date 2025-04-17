@@ -27,7 +27,7 @@ Polyseed has a number of advantages over Monero's standard seeds:
 | French                | ✔                 | ✔                |
 | Italian               | ✔                 | ✔                |
 | Czech                 | ✔                 | ✖                |
-| Portugese             | ✔                 | ✖                |
+| Portuguese            | ✔                 | ✖                |
 | Dutch                 | ✖                 | ✔                |
 | Esperanto             | ✖                 | ✔                |
 | German                | ✖                 | ✔                |
