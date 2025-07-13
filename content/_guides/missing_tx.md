@@ -16,7 +16,7 @@ You can find the latest version of Feather on [featherwallet.org/download](https
 
 On most operating systems you can use the [built-in updater](updater) to update to the latest version. To upgrade manually, see the installation guide for your specific operating system at the top of these docs.
 
-**Note**: All Feather versions 1.0.1 and below will stop working after August 13 2022. Upgrade to Feather 2.0.0 to be able to connect to the network.
+**Note**: All Feather versions 1.0.1 and below stopped working after August 13 2022. Upgrade to Feather 2.0.0 to be able to connect to the network.
 
 ### Is your wallet synchronized?
 
