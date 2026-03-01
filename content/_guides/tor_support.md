@@ -33,3 +33,15 @@ This setting is stored as `torPrivacyLevel` in [`settings.json`](paths):
 | `2` | Always over Tor | All node traffic uses .onion nodes exclusively. Maximum privacy, but initial sync may be significantly slower. |
 
 The related setting `initSyncThreshold` (default: `360`) controls how many blocks from the network tip the wallet must reach before switching to .onion-only nodes when `torPrivacyLevel` is set to `1`.
+
+The **"Only allow connections to onion services"** checkbox (`torOnlyAllowOnion` in `settings.json`) is a separate override. When enabled, it forces .onion-only connections **regardless** of the `torPrivacyLevel` setting. For example, setting `torPrivacyLevel` to `0` (Never over Tor) while `torOnlyAllowOnion` is `true` will still restrict connections to .onion nodes only. Local nodes are always exempt from this restriction.
+
+### Tails, Whonix and torsocks
+
+On Tails, Whonix, or when Feather is started with `torsocks`, Feather will not start its own Tor daemon and assumes Tor is already running:
+
+- **Tails**: Tor status is checked via the `tails-tor-has-bootstrapped.target` systemd unit.
+- **Whonix**: Tor is assumed to be connected (Whonix routes all traffic through Tor at the OS level).
+- **torsocks**: Tor is assumed to be connected (torsocks intercepts network calls transparently).
+
+In all three cases, `torPrivacyLevel` still controls which nodes Feather will connect to. The proxy settings in the UI do not affect these environments.
