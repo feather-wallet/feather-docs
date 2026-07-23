@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" (dict "page" . "withAside" true "seo" "website") }}
+<body>
+{{ partial "nav.html" . }}
+{{ partial "guides-aside.html" . }}
+<main id="main">
+{{ $guides := where site.RegularPages "Section" "guides" }}
+{{- range hugo.Data.guide_categories }}
+{{- $inCat := where $guides "Params.category" .slug }}
+{{- $sorted := sort $inCat "File.BaseFileName" "asc" }}
+<h2 id="{{ anchorize .name }}">{{ .name }}</h2>
+
+<ul>
+{{- range $sorted }}
+  <li>
+    <p><a href="/guides/{{ .File.BaseFileName }}">{{ .Params.title }}</a></p>
+  </li>
+{{- end }}
+</ul>
+{{ end }}
+</main>
+{{ partial "footer.html" . }}

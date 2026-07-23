@@ -1,0 +1,57 @@
+{{- $p := .page -}}
+{{- $type := .type -}}
+{{- $siteTitle := site.Title -}}
+{{- $siteDesc := site.Params.description -}}
+{{- $locale := site.Params.locale -}}
+{{- $twitter := site.Params.twitterUsername -}}
+{{- $rel := $p.RelPermalink | strings.TrimSuffix "index.html" | strings.TrimSuffix ".html" -}}
+{{- $url := printf "%s%s" (site.BaseURL | strings.TrimSuffix "/") $rel -}}
+{{- if eq $type "website" -}}
+<title>{{ printf "%s | %s" $siteTitle $siteDesc }}</title>
+<meta property="og:title" content="{{ $siteTitle }}" />
+<meta property="og:locale" content="{{ $locale }}" />
+<meta name="description" content="{{ $siteDesc }}" />
+<meta property="og:description" content="{{ $siteDesc }}" />
+<link rel="canonical" href="{{ $url }}" />
+<meta property="og:url" content="{{ $url }}" />
+<meta property="og:site_name" content="{{ $siteTitle }}" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="{{ $siteTitle }}" />
+<meta name="twitter:site" content="@{{ $twitter }}" />
+<script type="application/ld+json">
+{{ printf `{"@type":"WebSite","headline":%s,"description":%s,"url":%s,"name":%s,"@context":"https://schema.org"}` ($siteTitle | jsonify) ($siteDesc | jsonify) ($url | jsonify) ($siteTitle | jsonify) | safeJS }}</script>
+{{- else if eq $type "article" -}}
+{{- $date := now.Format "2006-01-02T15:04:05-07:00" -}}
+{{- $first := index (split (trim $p.RawContent "\n") "\n\n") 0 -}}
+{{- $desc := $first | $p.RenderString | plainify | htmlUnescape -}}
+{{- $desc = trim (replaceRE `\s+` " " $desc) " " -}}
+<title>{{ printf "%s | %s" $p.Title $siteTitle }}</title>
+<meta property="og:title" content="{{ $p.Title }}" />
+<meta property="og:locale" content="{{ $locale }}" />
+<meta name="description" content="{{ $desc }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<link rel="canonical" href="{{ $url }}" />
+<meta property="og:url" content="{{ $url }}" />
+<meta property="og:site_name" content="{{ $siteTitle }}" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="{{ $date }}" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="{{ $p.Title }}" />
+<meta name="twitter:site" content="@{{ $twitter }}" />
+<script type="application/ld+json">
+{{ printf `{"@type":"BlogPosting","headline":%s,"dateModified":%s,"datePublished":%s,"description":%s,"url":%s,"mainEntityOfPage":{"@type":"WebPage","@id":%s},"@context":"https://schema.org"}` ($p.Title | jsonify) ($date | jsonify) ($date | jsonify) ($desc | jsonify) ($url | jsonify) ($url | jsonify) | safeJS }}</script>
+{{- else -}}
+<title>{{ printf "%s | %s" $p.Title $siteTitle }}</title>
+<meta property="og:title" content="{{ $p.Title }}" />
+<meta property="og:locale" content="{{ $locale }}" />
+<meta name="description" content="{{ $siteDesc }}" />
+<meta property="og:description" content="{{ $siteDesc }}" />
+<link rel="canonical" href="{{ $url }}" />
+<meta property="og:url" content="{{ $url }}" />
+<meta property="og:site_name" content="{{ $siteTitle }}" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="{{ $p.Title }}" />
+<meta name="twitter:site" content="@{{ $twitter }}" />
+<script type="application/ld+json">
+{{ printf `{"@type":"WebPage","headline":%s,"description":%s,"url":%s,"@context":"https://schema.org"}` ($p.Title | jsonify) ($siteDesc | jsonify) ($url | jsonify) | safeJS }}</script>
+{{- end -}}

@@ -1,10 +1,6 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-node_modules
-# we don't need a lock file, better to just grab the most up to date versions
-# since we only use a cli tool
-package-lock.json
+# Hugo
+/public/
+/resources/_gen/
+.hugo_build.lock
+
 .idea

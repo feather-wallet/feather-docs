@@ -2,11 +2,11 @@ import os
 import re
 from urllib.parse import urlparse
 
-os.chdir("content/_guides")
+os.chdir("content/guides")
 
 links = r"\[(.+?)\]\((.+?)\)"
 
-files = os.listdir(".")
+files = [f for f in os.listdir(".") if not f.startswith("_")]
 valid_links = [link.removesuffix(".md").replace("_", "-") for link in files]
 
 has_invalid = False

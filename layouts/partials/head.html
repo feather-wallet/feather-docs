@@ -5,16 +5,16 @@
   <meta charset="utf-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  {%- if page.robots -%}
-  <meta name="robots" content="{{ page.robots }}">
-  {%- endif -%}
-  {%- seo -%}
+  {{- with .page.Params.robots }}
+  <meta name="robots" content="{{ . }}">
+  {{- end }}
+  {{ partial "seo.html" (dict "page" .page "type" .seo) }}
   <link rel="icon" type="image/svg+xml" href="/static/files/feather.png">
-  <!-- Stylesheets -->
-  <style>{%- include modern-normalize.css -%}</style>
-  <style>{%- include inline-style.css -%}</style>
-  {% if include.with_aside %}
-  <style>{%- include inline-aside-style.css -%}</style>
-  {% endif %}
+  {{ "<!-- Stylesheets -->" | safeHTML }}
+  <style>{{ readFile "assets/inline/modern-normalize.css" | safeCSS }}</style>
+  <style>{{ readFile "assets/inline/inline-style.css" | safeCSS }}</style>
+  {{ if .withAside }}
+  <style>{{ readFile "assets/inline/inline-aside-style.css" | safeCSS }}</style>
+  {{ end }}
   <link rel="stylesheet" href="/static/css/additional-styles.css">
 </head>

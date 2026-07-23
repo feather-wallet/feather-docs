@@ -1,0 +1,11 @@
+{{- /* Reproduce kramdown + Rouge's wrapper markup for fenced code blocks.
+       Bare fences use "plaintext"; content is escaped like kramdown (& < >),
+       leaving quotes intact. The inner <code> is tagged so the page template
+       can distinguish it from inline <code>. */ -}}
+{{- $lang := cond (eq .Type "") "plaintext" .Type -}}
+{{- $code := .Inner | strings.TrimRight "\n" -}}
+{{- $code = replace $code "&" "&amp;" -}}
+{{- $code = replace $code "<" "&lt;" -}}
+{{- $code = replace $code ">" "&gt;" -}}
+{{- printf `<div class="language-%s highlighter-rouge"><div class="highlight"><pre class="highlight"><code class="__block__">%s` $lang $code | safeHTML }}
+</code></pre></div></div>

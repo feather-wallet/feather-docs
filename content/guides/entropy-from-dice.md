@@ -35,9 +35,11 @@ If you throw multiple dice, scan the throwing area from left to right to determi
 
 For example, if you roll:
 
-    ⚃       ⚄
-        ⚁
-                 ⚀
+```
+⚃       ⚄
+    ⚁
+             ⚀
+```
 
 Enter `4 2 5 1` in the entry box and press **Next roll**. 
 

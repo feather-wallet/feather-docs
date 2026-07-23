@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" (dict "page" . "withAside" false "seo" "webpage") }}
+<body>
+{{ partial "nav.html" . }}
+<main id="main">
+    {{ if .Title }}
+    <h1>{{ .Title }}</h1>
+    {{ end }}
+    {{ .Content }}
+  </main>
+{{ partial "footer.html" . }}

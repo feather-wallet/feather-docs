@@ -1,0 +1,23 @@
+<aside role="menu">
+  {{- $cur := .RelPermalink -}}
+  {{- $guides := where site.RegularPages "Section" "guides" -}}
+  {{- range hugo.Data.guide_categories }}
+  {{- $inCat := where $guides "Params.category" .slug -}}
+  {{- $sorted := sort (sort $inCat "File.BaseFileName" "asc") "Weight" "asc" -}}
+  {{- $open := false -}}
+  {{- range $sorted }}{{ if eq .RelPermalink $cur }}{{ $open = true }}{{ end }}{{ end -}}
+  <details {{ if $open }}open{{ end }}>
+    <summary>{{ .name }}</summary>
+
+    <div>
+      {{- range $sorted }}
+      <a
+      role="menuitem"
+      {{ if eq .RelPermalink $cur }}class="active"{{ end }}
+      href="/guides/{{ .File.BaseFileName }}"
+      ><span>{{ .Params.nav_title }}</span></a>
+      {{- end }}
+    </div>
+  </details>
+  {{- end }}
+</aside>

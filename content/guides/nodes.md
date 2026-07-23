@@ -46,7 +46,7 @@ The wallet communicates with the node via a JSON/binary interface: [Daemon RPC](
 During normal use the wallet will use the following endpoints:
 
 |Endpoint       | Purpose | Comment                        |
-|---------------|------------------------------------------|
+|---------------|---------|------------------------------------------|
 |get_info      | General | Provide basic information about the status of the node and Monero network. Results are cached for 30 seconds. |
 |/get_blocks.bin| Sync    | Obtain block data for wallet synchronization |
 |/get_hashes.bin| Sync    | Get block hashes. Saved in wallet cache (m_blockchain). |

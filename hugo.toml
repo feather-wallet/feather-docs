@@ -1,0 +1,48 @@
+baseURL = "https://docs.featherwallet.org/"
+title = "Feather Wallet Documentation"
+
+uglyURLs = true
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy", "term"]
+[taxonomies]
+
+[params]
+description = "A free and open source Monero desktop wallet."
+url = "https://docs.featherwallet.org"
+locale = "en_GB"
+twitterUsername = "featherwallet"
+
+[outputs]
+home = ["HTML", "Atom"]
+section = ["HTML"]
+page = ["HTML"]
+
+[mediaTypes."application/atom+xml"]
+suffixes = ["xml"]
+
+[outputFormats.Atom]
+mediaType = "application/atom+xml"
+baseName = "atom"
+isPlainText = false
+rel = "alternate"
+noAlternative = true
+
+[markup]
+[markup.goldmark.extensions]
+# kramdown does not auto-link bare URLs.
+linkify = false
+[markup.goldmark.renderer]
+unsafe = true
+xhtml = true
+[markup.goldmark.extensions.typographer]
+disable = false
+# kramdown (Jekyll) emits literal Unicode punctuation, not HTML entities.
+apostrophe = "’"
+leftSingleQuote = "‘"
+rightSingleQuote = "’"
+leftDoubleQuote = "“"
+rightDoubleQuote = "”"
+ellipsis = "…"
+enDash = "–"
+emDash = "—"
