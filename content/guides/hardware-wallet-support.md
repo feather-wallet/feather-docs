@@ -24,6 +24,8 @@ category: faq
 
 If you own a device that is advertised as having support for Monero and it is not listed above, please [contact](report-an-issue) us.
 
+The Trezor Safe 7 is not currently supported. It introduced a new device communication protocol. We don't know when this protocol will be implemented in the Monero codebase.
+
 For instructions on how to use your device with Feather see the following guide: [Create a wallet (hardware device)](create-wallet-hardware-device).
 
 ### Overview

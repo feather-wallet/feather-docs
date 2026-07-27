@@ -6,7 +6,7 @@ category: faq
 
 The websocket server is a service hosted by the Feather developers that provides Feather Wallet clients with data from third party services.
 
-It is used by the wallet to obtain pricing information, CCS & Reddit feeds, a curated list of remote nodes, the latest version of Feather Wallet and more. For more details view the table below.
+It is used by the wallet to obtain pricing information, CCS proposals, a curated list of remote nodes, the latest version of Feather Wallet and more. For more details view the table below.
 
 The websocket server is only used to fetch information. The wallet does not send information about its state or the transactions you send to the websocket server. It is not used for any telemetry or crash reports. The wallet does not send a unique client id.
 

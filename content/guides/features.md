@@ -68,7 +68,7 @@ Feature comparison between Monero desktop wallets.
 | Trezor Model T/Safe 3                                                                       | ✔                        | ✔               | ✔               |
 | **► Fiat**                                                                                  |
 | Crypto/fiat calculator                                                                      | ✔                        | ✖               | ✖               |
-| Historical fiat prices                                                                      | ✔                        | ✖               | ✖               |
+| Historical fiat prices                                                                      | ✖                        | ✖               | ✖               |
 | Fiat balance display                                                                        | ✔                        | ✖               | ✔               |
 | **► Misc**                                                                                  |
 | Built-in updater                                                                            | ✔                        | ✖               | ✔               |

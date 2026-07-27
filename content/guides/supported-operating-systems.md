@@ -11,7 +11,7 @@ Official Feather builds run on the following operating systems:
 |------------------|-----------------------------------------------------------|----------------------------|
 | Linux            | [glibc 2.31](https://repology.org/project/glibc/versions) | x64, arm32, arm64, riscv64 |
 | Windows          | [10 and higher](https://endoflife.date/windows)           | x64                        |
-| macOS            | [12 and higher](https://endoflife.date/macos)             | Intel, Apple Silicon       |
+| macOS            | [14 and higher](https://endoflife.date/macos)             | Intel, Apple Silicon       |
 
 It is strongly recommended that you run the latest version of Feather on an updated and supported operating system from 
 a vendor you trust.
