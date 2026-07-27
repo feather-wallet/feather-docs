@@ -21,6 +21,3 @@ The transaction history is a CSV file with the following schema:
 |txid|string|449f065...876206|Transaction ID. (Example shortened for readability.)|
 |description|string|Donation to Monero Core|Transaction description|
 |paymentID|string||Payment ID. Usually blank.|
-|fiatAmount|float|20.2|Amount is always rounded to 3 significant digits. Shows "?" if value cannot be calculated.|
-|fiatCurrency|string|USD|Fiat currency|
-
