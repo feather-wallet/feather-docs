@@ -19,7 +19,6 @@ The **Program data** folder contains the following files:
 |-----------------------|------------------|-------------------------------------------------------------------------------|
 | Configuration         | `settings.json`  | JSON file containing wallet settings                                          |
 | Tor program file      | `./tor/*`        | Bundled Tor program files, placed here when Feather starts                    |
-| Fiat history database | `fiatHistory.db` | Text file with on each row: `YYYYMMDD:<XMR price in USD>`                     |
 | Log files             | `libwallet.log*` | Monero core wallet implementation logs. Log files are not written by default. |
 
 **Exceptions**:
